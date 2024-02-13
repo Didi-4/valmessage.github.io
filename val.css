@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: rgba(253, 69, 86);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    padding: 2rem 2rem 1rem 2rem;
+}
+.question{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.verify{
+    display: block;
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+}
+.message{
+    display: none;
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    color: wheat;
+}
+button{
+    padding: 1rem;
+    width: 5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: brown;
+    color: white;
+}
+#container {
+    width: 50%;
+    display: none;
+    /* height: 50%; */
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 20px;
+    z-index: 10;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-family: "Poppins",sans-serif;
+}
+.fa-heart {
+    color: rgba(83, 33, 43);
+    font-size: 25px;
+    position: absolute;
+    animation:  heartMove linear 1;
+    top: -10vh;
+    z-index: 0;
+}
+
+@keyframes heartMove {
+    0%{
+        transform: translateY(-10vh) ;
+    }
+    100%{
+        transform: translateY(110vh) ;
+    }
+}
